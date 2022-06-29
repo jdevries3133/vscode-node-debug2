@@ -1,19 +1,32 @@
-**Important note:** By default, this extension now delegates to [the new js-debug extension](http://github.com/microsoft/vscode-js-debug) which is built-in to VS Code. Please file issues on that repo. To revert to the old behavior, you can set `"debug.javascript.usePreview": false` in your settings.
+# Node Debug; nvim compatibility fork
 
----
+The newer vscode-node-debug debug adapter implementation is not strictly DAP
+compliant, and [there isn't much interest in making it
+be.](https://github.com/microsoft/vscode-js-debug/issues/969)
 
-# Node Debug
-[![Build Status](https://vscode.visualstudio.com/_apis/public/build/definitions/d3aa0b57-eb08-43b8-9aec-0c0a0d5d5ad0/8/badge)](https://vscode.visualstudio.com/vscode-node-debug2/_build/index?definitionId=8)
+I don't expect it'll be possible to meaningfully maintain this project myself,
+but vscode-node-debug is missing some features which are important to me, and
+I am going to look into adding. There are also some failing tests on this
+project as I write it now, and I might try to look into those too.
 
-This extension is bundled with Visual Studio Code and together with **Node Debug (legacy)** forms the [Node.js](https://nodejs.org) debugging experience.
+In any case, I'm not aware of any other forks that are actually being
+maintained, and I'm happy to at least review PRs and try to keep this thing
+alive, since it's currently the only node debugger that is compatible with
+nvim-dap.
+
+This extension is bundled with Visual Studio Code and together with **Node
+Debug (legacy)** forms the [Node.js](https://nodejs.org) debugging experience.
 
 **Node Debug** is the debugger for Node.js versions >= 8.0.
 
-See a general overview of debugging in VS Code [here](https://code.visualstudio.com/docs/editor/debugging).
+See a general overview of debugging in VS Code
+[here](https://code.visualstudio.com/docs/editor/debugging).
 
-Documentation for Node.js specific debugging can be found [here](https://code.visualstudio.com/docs/nodejs/nodejs-debugging).
+Documentation for Node.js specific debugging can be found
+[here](https://code.visualstudio.com/docs/nodejs/nodejs-debugging).
 
-Please submit bugs and feature requests to the [VS Code repository](https://github.com/microsoft/vscode/issues).
+Please submit bugs and feature requests to the [VS Code
+repository](https://github.com/microsoft/vscode/issues).
 
 
 ## License
